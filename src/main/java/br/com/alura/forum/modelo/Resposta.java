@@ -11,8 +11,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Resposta {
 
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Id
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String mensagem;
 	@ManyToOne

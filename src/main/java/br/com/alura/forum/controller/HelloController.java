@@ -10,6 +10,14 @@ public class HelloController {
 	@RequestMapping("/")
 	@ResponseBody
 	public String hello() {
-		return "<a href=\"http://localhost:8080/h2-console\">Banco de dados!</a></br>Olá";
+		return    
+				"Olá"
+				+ "</br></br>"
+				+ "<a href=\"http://localhost:8080/h2-console\">Banco de dados!</a>"
+				+"</br></br>"
+				+ "<a href=\"http://localhost:8080/topicos\">Pesquisa todos</a>"
+				+"</br></br>"
+				+ "<a href=\"http://localhost:8080/topicos?nomeCurso=Spring+Boot\">Pesquisa com filtro</a>"
+				+"";
 	}
 }
