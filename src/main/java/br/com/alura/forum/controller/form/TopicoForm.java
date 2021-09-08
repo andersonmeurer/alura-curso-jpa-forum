@@ -1,4 +1,4 @@
-package br.com.alura.forum.controller;
+package br.com.alura.forum.controller.form;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -11,10 +11,12 @@ import br.com.alura.forum.repository.CrusoRepository;
 
 public class TopicoForm {
 
-	@NotNull @NotEmpty @Length(min=5)
+	@NotNull @NotEmpty 
+//	@Length(min=5) //esta gerando erro no hibernate-validator
 	private String titulo;
 
-	@NotNull @NotEmpty @Length(min=10)
+	@NotNull @NotEmpty
+//	@Length(min=10) //esta gerando erro no hibernate-validator
 	private String mensagem;
 
 	@NotNull @NotEmpty

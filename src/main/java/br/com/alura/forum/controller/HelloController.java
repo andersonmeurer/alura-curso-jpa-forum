@@ -13,7 +13,7 @@ public class HelloController {
 		return    
 				"Olá"
 				+ "</br></br>"
-				+ "<a href=\"http://localhost:8080/h2-console\">Banco de dados!</a>"
+				+ "<a href=\"http://localhost:8080/h2-console\">Banco de dados!</a> --->JDBC URL:\"jdbc:h2:mem:alura-forum\""
 				+"</br></br>"
 				+ "<a href=\"http://localhost:8080/topicos\">Pesquisa todos</a>"
 				+"</br></br>"
